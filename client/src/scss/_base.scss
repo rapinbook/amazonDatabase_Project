@@ -1,0 +1,48 @@
+//palette
+$vivid: #FF9B00;
+$black: #1C1919;
+
+//fontbook
+$defaultfont: SourceSansPro;
+$boldfont: SourceSansPro-Bold;
+$semiboldfont: SourceSansPro-SemiBold;
+$lato: Lato;
+$latobold: Lato-Bold;
+
+html *
+{
+   font-family: $defaultfont;
+}
+
+.page-wrapper {
+  height: 100vh;
+  background-color: white;
+  padding: 25px;
+}
+
+.spacer {
+  height: 2rem;
+}
+
+.left-align {
+  text-align: left;
+}
+
+.custom-divider {
+  background-color: #DEDEDE;
+  height: 1px;
+  width: 90%;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+td {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 400px;
+}
+
+.btn-stack .btn {
+  margin: 15px 5px 10px 5px;
+}

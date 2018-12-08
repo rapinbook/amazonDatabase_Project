@@ -1,0 +1,42 @@
+@import '_base.scss';
+
+.title-wrap {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.custom-title-black {
+  font-family: $boldfont;
+  font-size: 2rem;
+  color: $black;
+  display: inline-block;
+}
+
+.custom-title-orange {
+  font-family: $boldfont;
+  font-size: 2rem;
+  color: $vivid;
+  display: inline-block;
+}
+
+.get-started {
+  font-family: $boldfont;
+  font-size: 1.5rem;
+  color: #DEDEDE;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+@media (min-width: 780px){
+  .custom-title-black {
+    font-size: 4rem;
+  }
+
+  .custom-title-orange {
+    font-size: 4rem;
+  }
+
+  .get-started {
+    font-size: 3rem;
+  }
+}

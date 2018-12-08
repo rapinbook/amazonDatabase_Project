@@ -1,0 +1,64 @@
+@import './_base.scss';
+
+.product-header {
+  text-align: center;
+}
+.product-header-id{
+  font-size: 2.5rem;
+  font-family: $boldfont;
+  text-align: center;
+}
+
+.product-header-name{
+  font-size: 1.5rem;
+  font-family: $semiboldfont;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.product-title {
+  font-size: 1.2rem;
+  font-family: $boldfont;
+}
+
+.product-text {
+  font-size: 1.0rem;
+  font-family: $defaultfont;
+  margin-bottom: 20px;
+}
+
+.content-wrap {
+  padding: 0px 20px;
+}
+
+.filter-wrap {
+  text-align: left;
+  padding: 20px 25px;
+  border: 1px solid #DEDEDE;
+  border-radius: 5px;
+  position: sticky;
+}
+
+.filter-title {
+  font-family: $semiboldfont;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  margin-bottom: 5px;
+}
+
+.filter-subtitle {
+  font-family: $defaultfont;
+  text-transform: lowercase;
+  letter-spacing: 0.05rem;
+  font-size: 0.9rem;
+  color: #AAAAAA;
+  margin-bottom: 5px;
+}
+
+.not-found {
+  font-family: $semiboldfont;
+  font-size: 1.3rem;
+  color: #DEDEDE;
+  margin-top: auto;
+  margin-bottom: auto;
+}
