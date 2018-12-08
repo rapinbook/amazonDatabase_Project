@@ -28,7 +28,7 @@ class InsertModal extends React.Component {
   }
 
   handleScoreChange(event){
-    this.setState({ score: event.target.value })
+    this.setState({ score: this.inputEl.value })
   }
 
   handleSubmit(event){
@@ -64,6 +64,7 @@ class InsertModal extends React.Component {
     })
   }
   render(){
+    console.log(this.state.score)
     return(
       <Modal
         {... this.props}
@@ -80,7 +81,10 @@ class InsertModal extends React.Component {
             onSubmit={e => this.handleSubmit(e)}>
             <Form.Group controlId="exampleForm.ControlSelect1">
               <Form.Label>Score</Form.Label>
-              <Form.Control as="select" required>
+              <Form.Control as="select" required
+                onChange={this.handleScoreChange}
+                ref={ el => this.inputEl = el }
+                >
                 <option value="1">1 ✩</option>
                 <option value="2">2 ✩</option>
                 <option value="3">3 ✩</option>

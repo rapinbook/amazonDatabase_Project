@@ -94,7 +94,7 @@ router.post('/query', function(req, res) {
       break;
 
     case 'Manufacturer':
-      connection.query('SELECT * FROM QUERY_TABLE WHERE MANUFACTURER_NAME LIKE "%' + query+ '%";', function(err, rows, fields) {
+      connection.query('SELECT * FROM QUERY_TABLE WHERE MANUFACTURER_NAME LIKE "%' + query+ '%"' + rating_query + filter_query, function(err, rows, fields) {
        if (!err)
          res.json(rows);
        else
@@ -132,7 +132,7 @@ router.put('/query', function(req, res) {
 
 router.put('/updateQuery', function(req, res) {
   const pid = req.body.pid;
-  const price = req.body.price; 
+  const price = req.body.price;
 
   connection.query(`UPDATE PRODUCTS SET PRICE = ${price} WHERE PID=${pid};`, function(err, rows, fields) {
    if (!err)
